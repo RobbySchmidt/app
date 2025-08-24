@@ -21,7 +21,9 @@
 
   const store = useStore()
   
-  const image = computed(() => store.getImageById(params.id))
+  const image = computed(() => { 
+    return store.getImageById(params.id)
+  })
 </script>
 
 <style scoped>
